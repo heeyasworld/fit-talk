@@ -1,0 +1,48 @@
+.nav {
+  background-color: lightsalmon;
+  padding: 15px 50px;
+  /* border-top: 1px solid lightgrey; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  /*  기존 width에 padding을 넣으면 padding만큼 넓이가 추가되고
+      전체 넓이가 넓어지면서 콘텐츠가 화면 밖으로 잘리게 됨
+      그래서 box-sizing:border-box; 설정하면 넓이 안 넓어지고 Ok.
+  */
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__btn {
+  position: relative;
+}
+
+.nav__notification {
+  background-color: seagreen;
+  display: flex;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  right: -6px;
+  top: -8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav__notification-dot {
+  background-color: seagreen;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  right: -7px;
+  top: -5px;
+}
