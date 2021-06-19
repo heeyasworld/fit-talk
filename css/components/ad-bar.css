@@ -1,0 +1,41 @@
+.ad-bar {
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.ad-bar i {
+  color: seagreen;
+}
+
+.ad-bar__big {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+}
+
+.ad-bar__big-description {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  padding: 3px;
+}
+
+.ad-bar__big-fotos {
+  display: flex;
+  flex-direction: row;
+}
+
+.ad-bar__big-foto {
+  width: 100px;
+  height: 120px;
+}
+
+.ad-bar__big-foto:first-child {
+  border-radius: 15px 0 0 15px;
+}
+
+.ad-bar__big-foto:last-child {
+  border-radius: 0 15px 15px 0;
+}

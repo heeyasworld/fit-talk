@@ -1,0 +1,19 @@
+.settings-list {
+  margin-top: -15px;
+}
+
+.settings-setting {
+  padding: 20px 0;
+  border-bottom: var(--border);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.settings-setting i {
+  margin: 0 10px 0 5px;
+}
+
+.settings-setting__column span {
+  color: rgba(0, 0, 0, 0.7);
+}

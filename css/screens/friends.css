@@ -1,0 +1,17 @@
+.friends-screen {
+  padding: var(--padding);
+}
+
+.friends-screen__workout {
+  margin-top: 15px;
+  border-top: var(--border);
+}
+
+.friends-screen__workout-header {
+  padding: 10px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

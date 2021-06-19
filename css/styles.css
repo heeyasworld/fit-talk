@@ -4,11 +4,29 @@
 /* components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/ad-bar.css";
+@import "components/user-component.css";
+@import "components/notification.css";
+@import "components/alt-screen-header.css";
 /* screens */
 @import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/chat-list.css";
+@import "screens/workout.css";
+@import "screens/info.css";
+@import "screens/cog.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  height: 1000vh;
+  height: 150vh;
+}
+
+a {
+  cursor: pointer;
+}
+
+.main-screen {
+  padding: var(--padding);
 }
