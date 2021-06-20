@@ -17,3 +17,7 @@
 .settings-setting__column span {
   color: rgba(0, 0, 0, 0.7);
 }
+
+.settings-setting__column:last-child span {
+  color: rgba(0, 0, 0, 0.5);
+}
