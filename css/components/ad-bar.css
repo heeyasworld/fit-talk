@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: row;
   border-radius: 15px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .ad-bar__big-description {
@@ -25,6 +27,22 @@
 .ad-bar__big-fotos {
   display: flex;
   flex-direction: row;
+}
+
+@keyframes adBig {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.ad-bar__big-fotos:hover {
+  animation: adBig 1s linear infinite;
 }
 
 .ad-bar__big-foto {

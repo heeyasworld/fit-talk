@@ -9,6 +9,7 @@
 @import "components/user-component.css";
 @import "components/notification.css";
 @import "components/alt-screen-header.css";
+@import "components/media-queries.css";
 /* screens */
 @import "screens/login.css";
 @import "screens/friends.css";

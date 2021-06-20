@@ -78,3 +78,24 @@
 .workout__interview {
   margin: 15px 0;
 }
+
+@keyframes twinckle {
+  0% {
+    color: gold;
+    transform: none;
+  }
+  50% {
+    color: lightsalmon;
+    transform: scale(1.2);
+  }
+  100% {
+    color: gold;
+    transform: none;
+  }
+}
+
+.workout__top-list-score:hover i,
+.workout__today-info-score:hover i {
+  will-change: transform;
+  animation: twinckle 1s linear infinite;
+}

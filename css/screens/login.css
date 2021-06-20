@@ -48,11 +48,37 @@
   border-width: 0 3px 5px 0;
   cursor: pointer;
   padding: 15px 0px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
 .login-form__a {
   text-align: center;
   font-size: 14px;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* visibility:hidden 있어야 애니메이션 사라지고 정상적으로 화면 클릭 등 가능해짐 */
+  }
+}
+
+.splash-screen {
+  background-color: lightsalmon;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  animation-delay: 1s;
+  /* delay하면 그동안 멈춰있다가 이 시간 후에 애니메이션 시작 */
 }

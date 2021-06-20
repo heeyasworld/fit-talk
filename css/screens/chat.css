@@ -13,12 +13,35 @@
   background-color: seagreen;
 }
 
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+} */
+
 .main-chat {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* animation: fadeIn 0.3s linear; */
+}
+
+@keyframes fadeIn-top {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .chat__timestamp {
@@ -29,12 +52,41 @@
   padding: 5px 25px;
   border-radius: 15px;
   margin-bottom: 20px;
+  animation: fadeIn-top 0.5s linear;
+}
+
+@keyframes fadeIn-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .msg-row {
   width: 100%;
   display: flex;
   margin-bottom: 20px;
+  animation: fadeIn-left 0.5s linear;
+}
+
+@keyframes fadeIn-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.msg-row__me {
+  justify-content: flex-end;
+  animation: fadeIn-right 0.5s linear;
 }
 
 .msg-row-added,
@@ -78,10 +130,6 @@
   margin: 0 5px;
 }
 
-.msg-row__me {
-  justify-content: flex-end;
-}
-
 .msg__info__me {
   flex-direction: row-reverse;
 }
@@ -102,6 +150,7 @@
   padding: 5px 20px;
   box-sizing: border-box;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
 }
 
 .texting__column:first-child {
@@ -125,6 +174,8 @@
   border-radius: 20px;
   padding-left: 10px;
   font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  /* transition 넣음으로서 input 포커스되서 길어질 때 변화를 부드럽게 볼 수 있게 된다 */
 }
 
 .texting__column:last-child > i,
@@ -153,6 +204,31 @@
 .texting__column:last-child button:focus,
 .texting__column:last-child button:active {
   outline: none;
+}
+
+.texting .texting__column:first-child,
+.texting .fa-grin-hearts,
+.texting button {
+  transition: opacity 0.4s ease-in-out;
+  /* 아래 opacity:0 으로 변하는 4과정을 0.4초간 부드럽게 볼 수 있게 됨 */
+}
+
+.texting:focus-within .texting__column:first-child,
+.texting:focus-within .fa-grin-hearts,
+.texting:focus-within button {
+  /* texting안에 있는 element가 focus됐을 때 */
+  opacity: 0;
+}
+
+.texting:focus-within input {
+  width: 90vw;
+  transform: translateX(-10%) translateY(-80px);
+  /* Y에 -80 넣음으로서 아래에서 꺼졌던 텍스팅 창 중 input만 살아나게 된다 */
+}
+
+.texting:focus-within {
+  transform: translateY(80px);
+  /* texting 전체가 아래로 꺼진다 */
 }
 
 .msg__bubble-videocall {
