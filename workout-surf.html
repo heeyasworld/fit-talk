@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wokrout - Surf</title>
+     <!-- icon -->
+     <script src="https://kit.fontawesome.com/75f55f0a8e.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span id="datetime"></span>
+        </div>
+        <div class="status-bar__column">
+            <i class="fas fa-lock"></i>
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <img class="group-img" src="https://i1.wp.com/www.todosurf.com/wp-content/uploads/2019/05/regresar-al-surf.png?w=2492&ssl=1">
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Surf</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="far fa-comment-dots fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <a href="cog.html"><span><i class="fas fa-cog fa-lg"></i></span></a>
+        </div>
+    </header>
+    
+    <main class="screen-header group-main">
+        <div class="group-title">Notices</div>
+        <div class="post">
+            <div class="post-title">
+                <div class="post-title__author">
+                    <span>Heeya</span>
+                    <span>May 20, 2021, 02:12</span>
+                </div>
+                <div><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+            <div class="post-content">
+                <span>6월부터 주말마다 서핑 & 카버보드 모임 송정에서 엽니다! 파도 좋으면 다같이 오후에 서핑하고 저녁 삼겹살 먹고 소화시킬 겸 카버보드! 장판이면 하루종일 같이 카버 연습합시다! 🛹 ☄️☄️😎🏄🏽‍♀️🏄🏽‍🏄🏼‍♂️</span>
+            </div>
+        </div>
+    </main>
+
+    <a class="ad-bar" href="https://nomadcoders.co/?gclid=CjwKCAjwiLGGBhAqEiwAgq3q_vMUQ05Hds6krmB0aHri3K16Kxc8NqENybvAgqT1RzOn4afI3vZKURoCuFcQAvD_BwE">
+        <i class="fas fa-ad"></i>
+        <span>Nomad Coders - 클론코딩 멱살캐리 챌린지 ☄️☄️</span>
+    </a>
+
+    <main class="screen-header group-main">
+        <div class="post">
+            <div class="post-title">
+                <div class="post-title__author">
+                    <span>Sua</span>
+                    <span>Jun 20, 2021, 03:24</span>
+                </div>
+                <div><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+            <div class="post-content">
+                <span>이번 주 송정 파도 대박!!!!! ㅋㅋㅋㅋㅋㅋㅋㅋ 주말내내 송정에서 살아야 할 거 같음ㅋㅋㅋ 송정에서 다들 봐요!</span>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-title">
+                <div class="post-title__author">
+                    <span>Dal</span>
+                    <span>Jun 17, 2021, 12:55</span>
+                </div>
+                <div><i class="fas fa-ellipsis-v"></i></div>
+            </div>
+            <div class="post-content">
+                <span>안녕하세요. 서핑보드 새로 구매해야 하는데 혹시 저렴하고 상태 좋은 중고 구매 가능한 곳 아는 분 계신가요? 직거래도 가능하구요. 펀보드나 롱보드 구매하려고 해요!</span>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="fas fa-child fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <span class="nav__notification notification">1</span>
+                <a class="nav__link" href="chat-list.html"><i class="fas fa-comments fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="workout.html"><i class="fas fa-running fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <div class="nav__notification-dot"></div>
+                <a class="nav__link" href="info.html"><i class="fas fa-info fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>    
+
+    <div id="no-mobile">
+        <span>Your screen is too big :'(</span>
+    </div>
+
+    <!-- current time -->
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML =(("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+    </script>
+</body>
+</html>

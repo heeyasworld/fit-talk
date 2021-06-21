@@ -1,0 +1,46 @@
+.group-img {
+  width: 100vw;
+}
+
+.group-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-title {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+.post {
+  border: var(--border);
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.post-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-title__author span:first-child {
+  font-weight: 500;
+}
+
+.post-title__author span:last-child {
+  color: gray;
+  font-size: 13px;
+}
+
+.post-title i {
+  color: gray;
+  font-size: 13px;
+}
+
+.post-content {
+  line-height: 20px;
+}

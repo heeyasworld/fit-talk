@@ -3,3 +3,19 @@
 🎾 Languages : HTML & CSS
 
 🏄🏽‍♀️ Fit Talk is for people who do workout in their daily lives
+
+🎾
+
+🏄🏽‍♀️
+
+🎾
+
+🏄🏽‍♀️
+
+🎾
+
+🏄🏽‍♀️
+
+🎾
+
+🏄🏽‍♀️
